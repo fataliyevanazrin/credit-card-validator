@@ -1,0 +1,27 @@
+<div style="display: flex;">
+    <div style="margin-right: 20px; width: 100%;">
+        <img src="assets/images.jpeg" alt="" style="height: 280px; width: 439.55px;">
+    </div>
+    <div class="container">
+        <form [formGroup]="cardForm">
+            <app-input label="Name and Surname" [control]="cardForm.get('name')"></app-input>
+            <app-input label="Card Number" [control]="cardForm.get('cardNumber')"></app-input>
+            <div class="columns">
+                <div class="column">
+                    <app-input label="Expiry Date" [control]="cardForm.get('expirationDate')"></app-input>
+                </div>
+                <div class="column">
+                    <app-input label="Security Code" [control]="cardForm.get('securityCode')"></app-input>
+                </div>
+            </div>
+            <div class="buttons" style="display: flex; justify-content: flex-end;">
+                <button class="button is-warning" type="button" (click)="resetForm()"> Clear </button>
+                <button [disabled]="cardForm.invalid" class="button is-primary" type="submit"> Submit </button>  
+            </div>
+     
+        </form>
+    </div>
+</div>
+
+
+
