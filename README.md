@@ -27,8 +27,8 @@ To run this project locally, follow these steps:
 
 1. **Clone the repository:**
     ```bash
-    git clone https://github.com/your-username/same-letter.git
-    cd same-letter
+    git clone https://github.com/your-username/credit-card-validator.git
+    cd credit-card-validato
     ```
 
 2. **Install the dependencies:**
